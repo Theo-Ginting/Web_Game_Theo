@@ -1,0 +1,63 @@
+:root {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffaf0;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px auto;
+  border: 3px solid blanchedalmond;
+  width: 90%;
+  max-width: 400px;
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.option {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: bisque;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: burlywood;
+  transform: scale(1.05);
+}
